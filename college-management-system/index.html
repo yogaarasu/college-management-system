@@ -367,7 +367,6 @@
 
         function speak() {
             const input = document.getElementById('text').value;
-            console.log(input);
             const utterance = new SpeechSynthesisUtterance(input);
             speechSynthesis.speak(utterance);
         }
@@ -383,5 +382,6 @@
     </script>
     <script src="./script.js"></script>
 </body>
+
 
 </html>
