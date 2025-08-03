@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Arts College Coimbatore</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./gacbe-logo.jpg">
+
+    <style>
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="./gacbe-logo.jpg" alt="College Logo" class="logo">
+            <div class="college-info">
+                <h1>Government Arts College (Autonomous) அரசு கலைக் கல்லூரி (தன்னாட்சி)</h1>
+                <p>Coimbatore - 641018<br>
+                    Reaccredited with 'B++' Grade by NAAC and 44th rank in National Institute Ranking Framework (NIRF)
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="hamburger" id="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#" class="active" onclick="showContent('home')">Home</a></li>
+            <li class="dropdown">
+                <a href="#">About <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="showContent('history')">History</a></li>
+                    <li><a href="#">Vision & Mission</a></li>
+                    <li><a href="#">Governance</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Administration <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="showContent('principal')">Principal</a></li>
+                    <li><a href="#">Vice Principal</a></li>
+                    <li><a href="#">Registrar</a></li>
+                    <li><a href="#">Dean</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Departments <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="showContent('cs-dept')">Tamil</a></li>
+                    <li><a href="#" onclick="showContent('cs-dept')">English</a></li>
+                    <li><a href="#" onclick="showContent('cs-dept')">Computer Science</a></li>
+                    <li><a href="#" onclick="showContent('cs-dept')">Information Technology</a></li>
+                    <li><a href="#" onclick="showContent('cs-dept')">Mathematics</a></li>
+                    <li><a href="#" onclick="showContent('cs-dept')">Physics</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Facilities</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+
+        <!-- Home Section -->
+        <section id="home" class="content-section active">
+            <section class="hero">
+                <div class="hero-content">
+                    <input type="text" id="text" value="Welcome to Government Arts College Coimbatore-18" />
+                    <h2>Welcome to <span class="clg-name">Government Arts College</span> Coimbatore-18</h2>
+                    <p>The Government Arts College (Autonomous), Coimbatore was established in the year 1852
+                        by the
+                        British Government.</p>
+                    <button class="cta-button">Explore More</button>
+                    <button onclick="speak()" class="cta-button">Speak</button>
+                </div>
+            </section>
+
+            <section class="highlights">
+                <h2 class="section-title">College Highlights</h2>
+                <div class="highlight-grid">
+                    <div class="highlight-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Academic Excellence</h3>
+                        <p>Ranked among top 10 colleges in the state with excellent placement records.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-flask"></i>
+                        <h3>Research Facilities</h3>
+                        <p>State-of-the-art laboratories and research centers with modern equipment.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Library Resources</h3>
+                        <p>Over 100,000 books, journals, and digital resources available for students.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-running"></i>
+                        <h3>Sports & Fitness</h3>
+                        <p>Excellent sports facilities including gymnasium, playgrounds, and indoor courts.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="news-events">
+                <h2 class="section-title">News & Events</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <img src="./10.png" alt="News Image">
+                        <div class="news-content">
+                            <h3>Annual Convocation 2023</h3>
+                            <p class="date">June 15, 2023</p>
+                            <p>The college celebrated its 29th annual convocation with distinguished guests.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="./event4.jpeg" alt="News Image">
+                        <div class="news-content">
+                            <h3>Research Symposium</h3>
+                            <p class="date">May 28, 2023</p>
+                            <p>Department of Computer Science organized a national level research symposium.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <img src="./gallery-09.jpg" alt="News Image">
+                        <div class="news-content">
+                            <h3>Sports Day Celebration</h3>
+                            <p class="date">April 10, 2023</p>
+                            <p>Annual sports day was celebrated with great enthusiasm by students and staff.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </section>
+
+        <!-- History Section -->
+        <section id="history" class="content-section history">
+            <h2>College History</h2>
+            <p>The <b>Government Arts College (GAC), Coimbatore</b>, is one of the oldest and most prestigious
+                educational
+                institutions in Tamil Nadu, with a rich history dating back to the pre-independence era. Here’s an
+                overview of its history<br>
+
+                <b>Establishment and Early Years</b><br>
+                - <b>Founded in 1852</b> as a private college, initially affiliated with the University of Madras.<br>
+                - Later taken over by the *British colonial government* and renamed <b>Government Arts College,
+                    Coimbatore</b>.<br>
+                - Played a key role in higher education in the <b>Kongu region</b> (western Tamil Nadu) during the
+                British
+                Raj.<br>
+
+                <b>Post-Independence Growth</b><br>
+                - After India's independence (1947), the college continued to expand under the <b>Tamil Nadu
+                    government</b>.<br>
+                - Affiliated with <b>Bharathiar University</b> (established in 1982) when the university system was
+                decentralized.<br>
+                - Known for its strong emphasis on <b>arts, science, and humanities</b> education.<br>
+
+                <b>Academic Excellence</b><br>
+                - Offers undergraduate (UG), postgraduate (PG), and research programs in fields like <b>Tamil, English,
+                    History, Economics, Mathematics, Physics, Chemistry, and Computer Science</b>.<br>
+                - Produced many notable alumni, including <b>politicians, scholars, scientists, and civil servants</b>.
+            </p>
+
+        </section>
+
+        <!-- Principal Section -->
+        <section id="principal" class="content-section principal">
+            <h2>Principal</h2>
+            <img src="./principal.jpg" alt="principal photo" width="300px">
+            <p><b>Dr.M.R.YEZHILI</b>,MA,M.Phil,Ph.D.,.</p>
+        </section>
+
+        <!-- Computer Science Department Section -->
+        <section id="cs-dept" class="content-section cs-dept">
+            <h2>Department of Computer Science</h2>
+            <h3>Introduction</h3>
+            <p>The <b>Department of Computer Science</b> was established to meet the demand for well-qualified computer
+                professionals and was started in the year 1999. Department has well qualified and vibrant faculty
+                dedicated for the betterment of the students. Most of the students passed out are well placed or have
+                opted for higher studies. The department has provided a well-equipped computer lab with latest computer
+                softwares. The Laboratories are installed with broad-band internet facility. The department ensures that
+                program objectives are
+                constantly met and learning outcomes are monitored through periodical test and assignment.</p>
+            <h3>Vision</h3>
+            <p>“To empower rural women as globally competent professionals in computer science education and research.”
+            </p>
+            <h3>Mission</h3>
+            <p>
+                -Equip with Globally competent syllabus.<br>
+                -Adopt Innovative technologies in teaching and learning process.<br>
+                -Collaboration with multinational companies.<br>
+                -Train to get online certification.<br>
+                -Furnish Research and Development Lab.<br>
+                -Undertake major/minor projects.</p>
+            <h3>faculty</h3>
+            <div class="faculty">
+                <img src="./faculty/Dr.L.ROBERT.jpg" alt="Dr.L.ROBERT">
+                <div>
+                    <h3>Dr.L.ROBERT</h3>
+                    <p>Designation: Associate Professor & Head</p>
+                    <p>Qualification: M.Sc., M.Phil.,Ph.D</p>
+                    <p>Areas of Research Interest: Data Compression</p>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="./faculty/Dr.S.CHITRA.jpg" alt="Dr.L.ROBERT">
+                <div>
+                    <h3>Dr.S.CHITRA</h3>
+                    <p>Designation: Associate Professor</p>
+                    <p>Qualification:M.Sc., Ph.D</p>
+                    <p>Areas of Research Interest: Data Mining and Web Mining</p>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="./faculty/Dr.M.DEVIPRIYA.jpg" alt="Dr.L.ROBERT">
+                <div>
+                    <h3>Dr.M.DEVAPRIYA</h3>
+                    <p>Designation:Associate Professor</p>
+                    <p>Qualification: M.Sc., M.Phil.,Ph.D</p>
+                    <p>Areas of Research Interest: Image Processing and Computer Network</p>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="./faculty/SARASWATHI.jpg" alt="Dr.L.ROBERT">
+                <div>
+                    <h3>Dr.K.SARASWATHI</h3>
+                    <p>Designation: Associate Professor </p>
+                    <p>Qualification: MCA., M.Phil.,Ph.D</p>
+                    <p>Areas of Research Interest: Network security and biometrics</p>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="./faculty/MALATHY.jpg" alt="Dr.L.ROBERT">
+                <div>
+                    <h3>Dr.A.MALATHI</h3>
+                    <p>Designation: Associate Professor</p>
+                    <p>Qualification: M.Sc., M.Phil.,Ph.D</p>
+                    <p>Areas of Research Interest: Data Mining and WareHousing and Big Data</p>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="./faculty/Dr.P.BALAMURUGAN.jpg" alt="Dr.L.ROBERT">
+                <div>
+                    <h3>Dr.P.BALAMURUGAN</h3>
+                    <p>Designation: Associate Professor</p>
+                    <p>Qualification:M.Sc., Ph.D</p>
+                    <p>Areas of Research Interest:Digital Image Processing</p>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="./faculty/V.B.BUVANESWARI.jpg" alt="Dr.L.ROBERT">
+                <div>
+                    <h3>V.B.BUVANESWARI</h3>
+                    <p>Designation:Associate Professor</p>
+                    <p>Qualification: M.Sc., M.Phil., M.E</p>
+                    <p>Areas of Research Interest: Service Oriented Architecture, Machine Learning</p>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="./faculty/Dr.S.K. MAHENDRAN.jpg" alt="Dr.L.ROBERT">
+                <div>
+                    <h3>Dr.S.K. MAHENDRAN</h3>
+                    <p>Designation: Associate Professor </p>
+                    <p>Qualification: MCA, M.Phil(CS), Ph.D</p>
+                    <p>Areas of Research Interest: Image Processing, Data Mining and Networking</p>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="./faculty/IMG-20230822-WA0004.jpg" alt="Dr.L.ROBERT">
+                <div>
+                    <h3>Mr. S.YUVARAJ</h3>
+                    <p>Designation: Guest Lecturer</p>
+                    <p>Qualification: M.C.A., M.Phil., (Ph.D)</p>
+                    <p>Areas of Research Interest:Network Security</p>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="./faculty/rajasekar.jpg" alt="Dr.L.ROBERT">
+                <div>
+                    <h3>D.RAJASEKAR</h3>
+                    <p>Designation: Guest Lecturer</p>
+                    <p>Qualification: M.C.A., M.Phil., (Ph.D)</p>
+                    <p>Areas of Research Interest:Network Security</p>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="./faculty/rathika.jpg" alt="Dr.L.ROBERT">
+                <div>
+                    <h3>N.K.RATHIKA</h3>
+                    <p>Designation:Guest Lecturer</p>
+                    <p>Qualification: M.C.A., NET. (Ph.D.)</p>
+                    <p>Areas of Research Interest: Data Mining</p>
+                </div>
+            </div>
+            <div class="faculty">
+                <img src="./faculty/anbu.jpg" alt="Dr.L.ROBERT">
+                <div>
+                    <h3>R ANBAZHAGAN</h3>
+                    <p>Designation: Guest Lecturer </p>
+                    <p>Qualification: M.Sc., M.phil., NET., (Ph.D.)</p>
+                    <p>Areas of Research Interest: Computer networks and Neural Networks</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Academic Calendar</a></li>
+                    <li><a href="#">Examination</a></li>
+                    <li><a href="#">Scholarships</a></li>
+                    <li><a href="#">Downloads</a></li>
+                    <li><a href="https://yogaarasu.netlify.app" target="_blank">Yogaarasu</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> Government Arts College (Autonomous), Arts College Road,
+                        Coimbatore - 641 018, Tamil Nadu, India.</p>
+                    <p><i class="fas fa-phone"></i> (0422) 2215212</p>
+                    <p><i class="fas fa-envelope"></i> cbegaccoe@gmail.com</p>
+                </address>
+            </div>
+            <div class="footer-col">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Government Arts College. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+
+        function speak() {
+            const input = document.getElementById('text').value;
+            console.log(input);
+            const utterance = new SpeechSynthesisUtterance(input);
+            speechSynthesis.speak(utterance);
+        }
+
+        function showContent(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => section.classList.remove('active'));
+            const target = document.getElementById(sectionId);
+            if (target) {
+                target.classList.add('active');
+            }
+        }
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
